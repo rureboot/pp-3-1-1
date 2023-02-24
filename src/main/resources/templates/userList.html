@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        th {
+            background-color: #ffff00;
+        }
+
+        th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 4px;
+        }
+    </style>
+    <title>user list</title>
+</head>
+<body>
+<h1>user list</h1>
+<br>
+<br>
+<br>
+<table>
+    <tr>
+        <th>name</th>
+        <th> surname</th>
+        <th> action </th>
+    </tr>
+
+    <tr th:each="user : ${users}">
+        <td th:text="${user.name}"></td>
+        <td th:text="${user.surName}"></td>
+        <td>
+            <a th:href="@{/edit(id=${user.id})}">edit </a>
+            <a th:href="@{/delete(id=${user.id})}">delete</a>
+
+
+
+        </td>
+    </tr>
+</table>            <br><br>
+<a href="/userInfo">ADD USER</a>
+<br>
+<br>
+<br>
+<br>
+<!--<h1>FUCK YOU</h1>-->
+</body>
+</html>
