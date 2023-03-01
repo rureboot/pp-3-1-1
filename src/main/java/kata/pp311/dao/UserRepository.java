@@ -1,8 +1,8 @@
-package kata.pp312.dao;
+package kata.pp311.dao;
 
 
 
-import kata.pp312.model.User;
+import kata.pp311.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

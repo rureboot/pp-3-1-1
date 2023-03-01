@@ -1,4 +1,4 @@
-package kata.pp312;
+package kata.pp311;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

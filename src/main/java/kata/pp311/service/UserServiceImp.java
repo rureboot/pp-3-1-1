@@ -1,7 +1,7 @@
-package kata.pp312.service;
+package kata.pp311.service;
 
-import kata.pp312.model.User;
-import kata.pp312.dao.UserRepository;
+import kata.pp311.model.User;
+import kata.pp311.dao.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

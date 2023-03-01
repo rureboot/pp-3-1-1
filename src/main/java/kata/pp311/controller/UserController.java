@@ -1,7 +1,7 @@
-package kata.pp312.controller;
+package kata.pp311.controller;
 
-import kata.pp312.model.User;
-import kata.pp312.service.UserService;
+import kata.pp311.model.User;
+import kata.pp311.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
