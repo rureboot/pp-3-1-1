@@ -1,8 +1,8 @@
 package kata.pp312.service;
 
 import kata.pp312.model.User;
+import kata.pp312.dao.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,9 +11,12 @@ import java.util.List;
 public class UserServiceImp implements UserService {
 
 
-    @Autowired
-    private JpaRepository<User, Long> repository;
+    private final UserRepository repository;
 
+    @Autowired
+    public UserServiceImp(UserRepository repository) {
+        this.repository = repository;
+    }
 
     @Override
     public void addOrEditUser(User user) {
